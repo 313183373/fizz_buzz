@@ -1,14 +1,16 @@
 function fizz_buzz(num){
-    if(num%15===0){
-        console.log('fizz buzz');
-    }else if(num%5===0){
-        console.log('buzz');
-    }else if(num%3===0){
-        console.log('fizz');
+    for(let i=1;i<=num;i++){
+        if(i%15===0){
+            console.log('fizz buzz');
+        }else if(i%5===0){
+            console.log('buzz');
+        }else if(i%3===0){
+            console.log('fizz');
+        }else{
+            console.log(i);
+        }
     }
 }
 
 
-fizz_buzz(3);
-fizz_buzz(5);
-fizz_buzz(15);
+fizz_buzz(100);
